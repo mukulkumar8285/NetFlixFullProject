@@ -1,4 +1,4 @@
-const ApiEndPoint = "http://localhost:8080/api/v1/user";
+const ApiEndPoint = "https://net-flix-full-project.vercel.app/api/v1/user";
 // const ApiEndPoint = `${window.location.origin}/api/v1/user`;
 
 
