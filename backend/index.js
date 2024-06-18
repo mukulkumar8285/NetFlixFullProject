@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-    origin: "http://localhost:3000",
+    origin: ["https://net-flix-full-project-2.vercel.app"],
     methods:["POST", "GET"],
     credentials: true,
 }
