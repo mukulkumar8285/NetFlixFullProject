@@ -45,10 +45,16 @@ const Login = () => {
         dispatch(setUser(res.data.user))
         Navigate("/browse");
         console.log(res.data);
-      } catch (error) {
-        toast.error(error.response.data.message);
-        console.log(error);
+      }  catch (error) {
+      if (error.response && error.response.data) {
+        toast.error(error.response.data.message || 'An error occurred');
+      } else if (error.request) {
+        toast.error('No response from server. Please try again later.');
+      } else {
+        toast.error('An unexpected error occurred.');
       }
+      console.error(error);
+    } 
       finally{
         dispatch(setLoading(false))
       }
