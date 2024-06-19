@@ -35,6 +35,8 @@ app.get("/",(req,res)=>{
   res.json({
     massage:"working",
   });
+})
+  
 app.listen(8080, () => {
   console.log("Server is Running on port 8080");
 });
