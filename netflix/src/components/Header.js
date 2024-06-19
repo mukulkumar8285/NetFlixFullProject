@@ -20,7 +20,7 @@ const Header = () => {
   const logouthandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(`${ApiEndPoint}/logout`, {
+      const res = await axios.get("https://net-flix-full-project-2.vercel.app/api/v1/user/logout", {
         headers: {
           "Content-Type": "application/json",
         },
