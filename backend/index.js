@@ -30,7 +30,7 @@ app.use(cors(corsOption));
 app.options("*", cors(corsOption));
 
 // API routes
-app.use("api/v1/user", userRouter);
+app.use("/api/v1/user", userRouter);
 app.get("/",(req,res)=>{
   res.json({
     massage:"working",
