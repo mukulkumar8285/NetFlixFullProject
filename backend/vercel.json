@@ -5,6 +5,15 @@
       "src": "*.js",
       "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/v1/user/login",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/api/v1/(.*)",
+      "dest": "/index.js"
+    }
   ]
-  
 }
