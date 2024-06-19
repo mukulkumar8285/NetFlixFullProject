@@ -31,7 +31,10 @@ app.options("*", cors(corsOption));
 
 // API routes
 app.use("https://net-flix-full-project.vercel.app/api/v1/user", userRouter);
-
+app.get("/",(req,res)=>{
+  res.json({
+    massage:"working",
+  });
 app.listen(8080, () => {
   console.log("Server is Running on port 8080");
 });
