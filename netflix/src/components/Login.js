@@ -31,7 +31,7 @@ const Login = () => {
 
       try {
         
-        const res = await axios.post("https://net-flix-full-project-2.vercel.app/api/v1/user/login", user,{
+        const res = await axios.post("https://net-flix-full-project.vercel.app/api/v1/user/login", user,{
           headers:{
             "Content-Type" : 'application/json'
           },
@@ -64,7 +64,7 @@ const Login = () => {
       const user = { fullName, email, password };
 
       try {
-        const res = await axios.post("https://net-flix-full-project-2.vercel.app/api/v1/user/register", user ,{
+        const res = await axios.post("https://net-flix-full-project.vercel.app/api/v1/user/register", user ,{
           headers:{
             "Content-Type" : 'application/json'
           },
