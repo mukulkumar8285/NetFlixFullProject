@@ -36,7 +36,7 @@ app.get("/",(req,res)=>{
     massage:"working",
   });
 })
-app.get("/api/v1/user/login",(req,res)=>{
+app.get("api/v1/user/login",(req,res)=>{
   res.json({
     massage:"login",
   });
