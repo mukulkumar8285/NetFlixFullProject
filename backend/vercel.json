@@ -9,15 +9,15 @@
   "routes": [
     {
       "src": "/api/v1/user/register",
-      "dest": "/index.js"
+      "dest": "/"
     },
     {
       "src": "/api/v1/user/login",
-      "dest": "/index.js"
+      "dest": "/"
     },
     {
       "src": "/api/v1/user/logout",
-      "dest": "/index.js"
+      "dest": "/"
     }
   ]
 }
